@@ -1,0 +1,83 @@
+html {
+    height: 100%;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("Images/Hell.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    flex: 1 1 auto;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.700);
+    padding: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+    object-fit: contain;
+    display: block;
+}
+/* ... existing code ... */
+@media (max-width: 768px) {
+    .box {
+        padding: 0.5rem;
+    }
+
+    video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        padding: 0;
+    }
+
+    video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.credits {
+    width: 100%;
+    text-align: center;
+    color: red;
+    background-color: rgba(0, 0, 0, 0.700);
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+}
+
+.credits a {
+    color: red;
+    text-decoration: none;
+}
+
+@media (max-width: 480px) {
+    .credits {
+        font-size: 0.85rem;
+        padding: 0.5rem;
+    }
+}
+
+.credits a:hover {
+    text-decoration: underline;
+}
